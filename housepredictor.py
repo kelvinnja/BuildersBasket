@@ -115,7 +115,7 @@ if predict_button:
         with st.spinner('Please wait. Predicting ...'):            
             predictors = prepare_predictors()
             predicted_price = round(predict(predictors)[0], -6)
-            prediction_space.header(f'The predicted price is {int(predicted_price):,} Rwf')
+            prediction_space.header(f'The predicted price is {int(predicted_price):,} Ksh')
  
 st.write('#')
 disclaimer = st.beta_expander('Details & Disclaimer!')
